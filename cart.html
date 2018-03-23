@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <meta charset="UTF-8">
+    <title>我的行程表 - TravelAdvenTo(旅游去)</title>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/header.css"/>
+    <link rel="stylesheet" href="css/footer.css"/>
+    <link rel="stylesheet" href="css/cart.css"/>
+  </head>
+  <body>
+    <!-- 1.页头 -->
+    <header class="header">
+      <div class="loading">
+        <img src="img/app/loading.gif" alt="加载中..." />
+      </div>
+    </header>
+    <!-- 2.面包屑导航 -->
+    <nav class="bread-crumb">
+      <a href="index.html">首页</a>
+      <span>&gt;</span>
+      <a href="products.html">用户中心</a>
+      <span>&gt;</span>
+      <a href="cart.html" data-main="kw">我的行程表</a>
+    </nav>
+    <!-- 3.行程表 -->
+    <section class="cart">
+      <!--3.1标题行-->
+      <div class="title">
+        <b>我的行程表</b>
+        <p>
+          已选
+          <span class="totalOne color">0</span>
+          个行程
+          <span>合计(不含服务费)</span>
+          ¥<span class="totalPrices color sum total-price-all">0.00</span>
+          <span class="unit color">元</span>
+        </p>
+      </div>
+      <!--3.2 行程内容-->
+      <div id="box">
+        <!--3.2.1 内容-->
+        <div id="content-box">
+          <div class="imfor-top">
+            <div class="check-top">
+              <input class="check-all" type="checkbox"/>
+              全选
+            </div>
+            <div class="product-top">商品</div>
+            <div class="price-top">单价(元)</div>
+            <div class="num-top">人数</div>
+            <div class="total-top">金额</div>
+            <div class="del-top">操作</div>
+          </div>
+          <!-- 3.2.2 产品主体 -->
+          <div class="content-box-body">
+          </div>
+        </div>
+        <!--3.2.3 计算-->
+        <div class="foot">
+          <div class="base">
+            <div class="all">
+              <input class="check-all" type="checkbox"/>
+              全选
+            </div>
+            <a class="sel-del" href="#">删除</a>
+            <div class="foot-qk clearAll">清空全部产品</div>
+          </div>
+          <div class="go-price">
+            <div class="foot-selected">已选<span class="totalOne color">0</span>个行程</div>
+            <div class="foot-tol">
+              <span>合计(不含服务费)：¥</span>
+              <span class="foot-price total-price-all">0.00</span>
+              <span class="foot-desc">元</span>
+            </div>
+            <div class="foot-cash">去结算</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 4.页尾 -->
+    <footer class="footer"></footer>
+    <!-- 运行脚本 -->
+    <script src="js/jquery-3.2.0.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.alert.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/cart.js"></script>
+  </body>
+</html>

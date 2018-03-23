@@ -1,0 +1,38 @@
+/*整体样式*/
+.footer{
+  background: #3c3c3c;
+  position:relative;
+  z-index:1000;
+  color: #ffffff;
+}
+.footer>.footer-main{
+  width:750px;
+  /*height:80px;*/
+  margin:auto;
+  display: flex;
+  justify-content: space-between;
+  align-items:center ;
+  /*border:1px solid black;*/
+}
+.footer>.footer-main>.footer-left{
+  width:550px;
+  padding: 20px;
+  /*border: 1px solid red;*/
+}
+.footer>.footer-main>.footer-left>.footer-msg{
+  position: relative;
+  left:20%;
+  margin-top: 35px;
+}
+.footer a{
+  color: #cbcbcb;
+}
+
+.footer>.footer-bottom{
+  width:80%;
+  border-top: 1px solid #dddddd;
+  height:30px;
+  line-height: 30px;
+  text-align: center;
+  margin: 5px auto;
+}

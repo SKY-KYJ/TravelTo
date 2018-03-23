@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>用户注册 - TravelAdvenTo(旅游去)</title>
+		<link rel="stylesheet" href="css/base.css"/>
+		<link rel="stylesheet" href="css/register.css"/>
+    <link rel="stylesheet" href="css/verify.css"/>
+    <link rel="stylesheet" href="css/header.css"/>
+	</head>
+	<body>
+    <form>
+      <header class="header"></header>
+      <section class="main">
+        <div class="banner">
+          <div class="banImg show" id="ban1">
+            <img src="img/banner/banner01.jpg" alt=""/>
+          </div>
+          <div class="banImg"  id="ban2">
+            <img src="img/banner/banner02.jpg" alt=""/>
+          </div>
+          <div class="banImg"  id="ban3">
+            <img src="img/banner/banner03.jpg" alt=""/>
+          </div>
+          <div class="banImg"  id="ban4">
+            <img src="img/banner/banner04.jpg" alt=""/>
+          </div>
+        </div>
+        <div class="register">
+          <div class="uname">
+            <div>用户名:</div>
+            <input type="text" name="uname">
+            <span class="vali_info">用户名必须介于3~9位之间!</span>
+            <img src="img/register/ok.png" alt=""/>
+          </div>
+          <div class="upwd">
+            <div>登录密码:</div>
+            <input type="password" name="upwd">
+            <span class="vali_info">密码必须介于6~8位之间!</span>
+            <img src="img/register/ok.png" alt=""/>
+          </div>
+          <div class="rpwd">
+            <div>确认密码:</div>
+            <input type="password" name="rpwd">
+            <span class="vali_info">两次密码必须一致</span>
+            <img src="img/register/ok.png" alt=""/>
+          </div>
+          <div class="phone">
+            <div>手机号码:</div>
+            <input type="text" name="phone">
+            <span class="vali_info">手机号码必须11位!</span>
+            <img src="img/register/ok.png" alt=""/>
+          </div>
+          <div class="gender">
+            <div>性别:</div>
+            <select name="gender">
+              <option value="0">请选择</option>
+              <option value="1">男</option>
+              <option value="2">女</option>
+            </select>
+            <img src="img/register/ok.png" alt=""/>
+          </div>
+          <div class="email" >
+            <div>邮箱:</div>
+            <input type="email" name="uemail">
+            <span class="vali_info">请输入有效的电子邮件地址</span>
+            <img src="img/register/ok.png" alt=""/>
+          </div>
+          <div class="check">
+            <input type="checkbox" name="check">
+            <div>我已经认真阅读并同意 <a href="#">隐私协议</a></div>
+            <img src="img/register/ok.png" alt=""/>
+          </div>
+          <div class="reg-btn">
+            <input type="submit" value="同意协议并注册" name="sub">
+            <b></b>
+            <div><a href="index.html">返回</a></div>
+          </div>
+          <p class="log-btn">
+            已有账号? <a href="register.html">登录</a>
+          </p>
+        </div>
+      </section>
+    </form>
+    <!-- 运行脚本 -->
+    <script src="js/jquery-3.2.0.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.alert.js"></script>
+    <script src="js/jquery.validate.js"></script>
+    <script src="js/KyjLib.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/user/verify.js"></script>
+    <script src="js/user/register.js"></script>
+	</body>
+</html>

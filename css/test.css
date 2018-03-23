@@ -1,0 +1,56 @@
+.whj_jqueryPaginationCss-2{
+  display: inline-block;
+  padding: 5px;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+.whj_jqueryPaginationCss-2 div{
+  display: inline-block;
+  vertical-align: bottom;
+  height: 24px;
+  line-height: 24px;
+}
+.whj_jqueryPaginationCss-2 .whj_padding{
+  padding: 1px 9px;
+}
+.whj_jqueryPaginationCss-2 .whj_bgc{
+  background-color: #5194ca;
+  color: #fff;
+}
+.whj_jqueryPaginationCss-2 .whj_border{
+  border: 1px solid #5194ca;
+}
+.whj_jqueryPaginationCss-2 .whj_color{
+  color: #5194ca;
+}
+.whj_jqueryPaginationCss-2 .whj_hover:hover{
+  background-color: #d4f1ff;
+  color: #5194ca;
+  cursor: pointer;
+}
+.whj_jqueryPaginationCss-2 .whj_checked{
+  background-color: #d4f1ff;
+  color: #5194ca;
+}
+.whj_jqueryPaginationCss-2 .whj_hoverDisable{
+  opacity: 0.7;
+}
+.whj_jqueryPaginationCss-2 select{
+  height: 28px;
+  vertical-align: bottom;
+  padding: 0px;
+  outline: none;
+}
+.whj_jqueryPaginationCss-2 input{
+  padding: 0px;
+  height: 26px;
+  outline: none;
+  text-align: center;
+  width: 60px;
+  vertical-align: bottom;
+}
+.whj_jqueryPaginationCss-2 div,.whj_jqueryPaginationCss-2 input,.whj_jqueryPaginationCss-2 select{
+  margin: 2px;
+}

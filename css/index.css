@@ -1,0 +1,649 @@
+/**** 整体样式 start ****/
+body{
+  background: #e8e8e8;
+}
+section{
+  width: 1280px;
+  min-height: 500px;
+  overflow: hidden;
+  margin: 0 auto;
+  position: relative;
+}
+/**** 整体样式 end ****/
+/**** 2.轮播图样式 start ****/
+/*2整体样式*/
+.banner{
+  height:426px;
+}
+.banner>ul.banner-img{
+  position:absolute;
+  left:0;
+  border:0;
+}
+.banner>ul.banner-img>li{
+  float:left;
+  width:1280px;
+  border:0;
+}
+.banner>ul.banner-img>li>a{
+  position: relative;
+}
+.banner>ul.banner-img div{
+  position: absolute;
+  left:25px;
+  top:25px;
+  width:300px;
+  height:25px;
+  line-height: 30px;
+  color: #ffffff;
+  font-size: 25px;
+  text-shadow: 0 3px 5px rgba(0,0,0,0.9);
+  /*border:1px solid black;*/
+}
+.banner>ul.banner-img img{
+  min-width:1280px;
+  height:426px;
+}
+/*2.2左右方向按钮*/
+.banner>a.ck-slide{
+  position:absolute;
+  top:155px;
+  width:55px;
+  height:110px;
+  /*line-height: 110px;*/
+  text-align: center;
+  border-radius:5px;
+  /*font-size: 70px;*/
+  /*color: #ffffff;*/
+  background:#000;
+  opacity:0.3;
+  transition:all .3s linear;
+}
+.banner>a.ck-left{
+   left:10px;
+  background: #000 url("../img/index/arrow-left.png") no-repeat center center;
+}
+.banner>a.ck-right{
+  right:10px;
+  background:#000 url("../img/index/arrow-right.png") no-repeat center center;
+}
+.banner>a.ck-slide:hover{
+  opacity:0.6;
+}
+/*2.3导航小图标*/
+.banner ul.indicators{
+  position:absolute;
+  bottom:85px;
+  left:31%;
+  margin-left:-34px;
+}
+.banner ul.indicators li{
+  width:100px;
+  height:50px;
+  background:#fff;
+  /*border-radius:50%;*/
+  float:left;
+  margin-right:10px;
+  border:1px solid #ffffff;
+  transition:all .2s linear;
+}
+.banner ul.indicators li a{
+  width:100px;
+  height:50px;
+}
+.banner ul.indicators li a img{
+  width:100px;
+  height:50px;
+}
+.banner ul.indicators li:hover,.banner ul.indicators li.hover{
+  cursor:pointer;
+  /*background-color:#fff;*/
+  border:1px solid #FF9D00;
+}
+/**** 2.轮播图样式 end ****/
+/**** 3.精品介绍样式 start ****/
+/*3.整体样式*/
+.boutique{
+  height:620px;
+  margin-top:30px;
+  /*border:1px solid black;*/
+}
+/*3.1头部样式*/
+.boutique>.boutique-top{
+  width:1280px;
+  height:40px;
+  line-height:40px;
+  /*border:1px solid black;*/
+  border-bottom: 3px solid #afafaf;
+}
+.boutique>.boutique-top>div,.boutique>.boutique-top>ul{
+  float:left;
+}
+.boutique>.boutique-top>div{
+  width:100px;
+  height:40px;
+  font-size: 25px;
+  padding: 0 20px;
+  /*border:1px solid black;*/
+}
+.boutique>.boutique-top>ul>li{
+  float:left;
+  margin-left: 15px;
+  border-bottom: 3px solid rgba(1,1,1,0);
+  transition:all .2s linear;
+}
+.boutique>.boutique-top>ul>li>a{
+  transition:all .2s linear;
+}
+.boutique>.boutique-top>ul>li:hover,.boutique>.boutique-top>ul>li.active{
+  margin-left: 15px;
+  color:#3AA860;
+  border-bottom: 3px solid #3AA860;
+}
+.boutique>.boutique-top>ul>li:hover>a,.boutique>.boutique-top>ul>li.active>a{
+  color:#3AA860;
+}
+
+.boutique>.boutique-top>a{
+  float:right;
+  margin-right: 10px;
+}
+/*2.3主体样式*/
+.boutique>.boutique-content>.content-box{
+  float:left;
+  width:300px;
+  height:250px;
+  margin:20px 10px;
+  /*border:1px solid black;*/
+}
+.boutique>.boutique-content>.content-box>.content-img{
+  width:300px;
+  height:200px;
+  /*border:1px solid black;*/
+  position: relative;
+}
+.boutique>.boutique-content>.content-box>.content-img>a>img{
+  width: 300px;
+  height: 200px;
+  /*border:1px solid black;*/
+}
+.boutique>.boutique-content>.content-box>.content-img>a>div{
+  width:300px;
+  height:50px;
+  background: rgba(58, 58, 58, 0.5);
+  color:#fff;
+  /*border:1px solid black;*/
+  position: absolute;
+  bottom: 0;
+  left:0;
+  overflow: hidden;
+}
+.boutique>.boutique-content>.content-box>.content-img>a>div>div{
+  width:290px;
+  padding-left:10px;
+  font-size: 15px;
+  line-height:25px;
+  overflow: hidden;
+}
+.boutique>.boutique-content>.content-box>.content-tit{
+  height:50px;
+  background:#fff;
+}
+.boutique>.boutique-content>.content-box>.content-tit>.content-lf{
+  float:left;
+  height:50px;
+  line-height: 50px;
+  font-size: 20px;
+  margin-left: 10px;
+  color:#FF6600;
+}
+.boutique>.boutique-content>.content-box>.content-tit>.content-rt{
+  float:right;
+  height:50px;
+  line-height: 50px;
+  margin-right: 10px;
+  font-size: 14px;
+}
+/**** 3.精品介绍样式 end ****/
+/**** 4.前十榜样式 start ****/
+/*4.整体样式*/
+.topTen{
+  height:750px;
+  margin-top: 30px;
+  /*border:1px solid black;*/
+}
+/*4.1头部样式*/
+.topTen>.topTen-top{
+  width:1280px;
+  height:40px;
+  line-height:40px;
+}
+.topTen>.topTen-top>div{
+  float:left;
+  text-align:center;
+  border:1px solid #afafaf;
+  /*border-bottom: 3px solid black;*/
+  /*transition:all .2s linear;*/
+  position: relative;
+}
+.topTen>.topTen-top>div>a{
+  width:254px;
+  color:#9e9a89;
+}
+.topTen>.topTen-top>div.active,.topTen>.topTen-top>div.active:hover{
+  background: #ffffff;
+  border-bottom:3px solid #00a680;
+}
+
+.topTen>.topTen-top>div.active>a,.topTen>.topTen-top>div.active:hover>a{
+  color:#00a680;
+}
+.topTen>.topTen-top>div.active:after{
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -13px;
+  width: 0;
+  height: 0;
+  margin-left: -8px;
+  border: solid transparent;
+  border-top-color: #00a680;
+  border-width: 6px 8px;
+}
+.topTen>.topTen-top>div:hover{
+  background: #a5a5a5;
+}
+.topTen>.topTen-top>div:hover>a{
+  color: #3b3931;
+}
+/*4.2主体样式*/
+.topTen>.topTen-content{
+  width:1280px;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content:space-between;
+}
+.topTen>.topTen-content>.content-box{
+  width:395px;
+  height:265px;
+  margin:40px 0;
+  /*border:1px solid black;*/
+}
+.topTen>.topTen-content>.content-box>.content-img{
+  width:395px;
+  height:265px;
+  /*border:1px solid black;*/
+  position: relative;
+}
+.topTen>.topTen-content>.content-box>.content-img>a>img{
+  width:395px;
+  height:265px;
+}
+.topTen>.topTen-content>.content-box>.content-img>a>div{
+  width:65px;
+  height:25px;
+  line-height: 25px;
+  /*border:1px solid black;*/
+  color: #ffffff;
+  text-shadow: 0 3px 5px rgba(0,0,0,0.9);
+  font-size: 22px;
+  font-weight:bold;
+  font-style:italic;
+  position: absolute;
+  top:10px;
+  right:10px;
+}
+.topTen>.topTen-content>.content-box>.content-tit{
+  display: flex;
+  justify-content:space-between;
+  height:50px;
+  background:#fff;
+}
+.topTen>.topTen-content>.content-box>.content-tit>.content-lf{
+  height:50px;
+  line-height: 50px;
+  font-size: 20px;
+  margin-left: 10px;
+  /*color:#FF6600;*/
+}
+.topTen>.topTen-content>.content-box>.content-tit>.content-lf>span{
+  margin:0 10px;
+}
+.topTen>.topTen-content>.content-box>.content-tit>.content-rt{
+  display:flex;
+  justify-content:space-around;
+  width:135px;
+  height:50px;
+  margin-right: 10px;
+  line-height: 50px;
+  font-size: 14px;
+}
+.topTen>.topTen-content>.content-box>.content-tit>.content-rt>.c-lf>a,.topTen>.topTen-content>.content-box>.content-tit>.content-rt>.c-rt>a{
+  width:50px;
+  height:20px;
+  line-height:20px;
+  margin:15px 0;
+  text-align: center;
+  font-weight:bold;
+  border:1px solid rgba(0,0,0,0);
+  border-radius:3px;
+}
+.topTen>.topTen-content>.content-box>.content-tit>.content-rt>.c-lf>a{
+  background:#498E6C;
+  color:#fff;
+}
+.topTen>.topTen-content>.content-box>.content-tit>.content-rt>.c-rt>a{
+  background:#4F92B8;
+  color:#fff;
+}
+.topTen>.topTen-content>.content-box>.content-tit>.content-rt>.c-lf>a:hover{
+  background:#1C7247;
+  color:#fff;
+}
+.topTen>.topTen-content>.content-box>.content-tit>.content-rt>.c-rt>a:hover{
+  background:#04649A;
+  color:#fff;
+}
+/**** 4.前十榜样式 end ****/
+/**** 5.人气指南样式 start ****/
+/*5.整体样式*/
+.guide{
+  width:1280px;
+  height:700px;
+  margin-top:60px;
+  /*border:1px solid black;*/
+}
+/*5.1头部样式*/
+.guide>.guide-top{
+  width:1280px;
+  height:365px;
+  margin:0 auto;
+  /*border:1px solid red;*/
+}
+.guide>.guide-top>.guide-item{
+  float:left;
+  width:270px;
+  height:365px;
+  /*border:1px solid black;*/
+  margin:0 25px;
+  position: relative;
+}
+.guide>.guide-top>.guide-item>a>.guide-item-top{
+  width:270px;
+  height:365px;
+  /*border:1px solid black;*/
+  position: absolute;
+  left:0;
+  top:0;
+}
+.guide>.guide-top>.guide-item>a>.cyan,
+.guide>.guide-top>.guide-item>a>.orange,
+.guide>.guide-top>.guide-item>a>.blue,
+.guide>.guide-top>.guide-item>a>.green{
+  transition: all .5s linear;
+}
+.guide>.guide-top>.guide-item>a>.cyan:hover{
+  background: rgba(47, 180, 149, 0.5);
+}
+.guide>.guide-top>.guide-item>a>.orange:hover{
+  background: rgba(229, 129, 64, 0.5);
+}
+.guide>.guide-top>.guide-item>a>.blue:hover{
+  background: rgba(47, 129, 169, 0.5)
+}
+.guide>.guide-top>.guide-item>a>.green:hover{
+  background: rgba(73, 137, 105, 0.5);
+}
+.guide>.guide-top>.guide-item>a>.guide-item-top>.guide-boutique,
+.guide>.guide-top>.guide-item>a>.guide-item-top>.guide-guide,
+.guide>.guide-top>.guide-item>a>.guide-item-top>.guide-notes,
+.guide>.guide-top>.guide-item>a>.guide-item-top>.guide-app{
+  width:234px;
+  height:200px;
+  /*border:1px solid black;*/
+  text-align: center;
+  margin:60px auto;
+
+}
+.guide>.guide-top>.guide-item>a>.guide-item-top>.guide-boutique>img{
+  width:150px;
+  height:120px;
+}
+.guide>.guide-top>.guide-item>a>.guide-item-top>.guide-boutique>span{
+  width:234px;
+  height:40px;
+  line-height:40px;
+  margin-top:10px;
+  font-size: 25px;
+  color:#fff;
+  border-top:2px solid #fff;
+  border-bottom:2px solid #fff;
+  transition:all .2s linear;
+}
+.guide>.guide-top>.guide-item>a>.cyan:hover>.guide-boutique>span{
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.9);
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.9);
+}
+.guide>.guide-top>.guide-item>a>.guide-item-top>.guide-guide>span{
+  transition:all .2s linear;
+}
+.guide>.guide-top>.guide-item>a>.guide-item-top>.guide-guide>span:nth-child(1){
+  width:234px;
+  height:40px;
+  line-height:40px;
+  margin-top:90px;
+  font-size: 25px;
+  color:#fff;
+}
+.guide>.guide-top>.guide-item>a>.guide-item-top>.guide-guide>span:nth-child(2){
+  color:#fff;
+}
+.guide>.guide-top>.guide-item>a>.orange:hover>.guide-guide>span{
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.9);
+}
+.guide>.guide-top>.guide-item>a>.orange:hover>.guide-guide>span:nth-child(2){
+  text-decoration: underline;
+}
+.guide>.guide-top>.guide-item>a>.guide-item-top>.guide-notes>span{
+  transition:all .2s linear;
+}
+.guide>.guide-top>.guide-item>a>.guide-item-top>.guide-notes>span:nth-child(1){
+  width:234px;
+  height:40px;
+  line-height:40px;
+  margin-top:90px;
+  font-size: 25px;
+  color:#fff;
+}
+.guide>.guide-top>.guide-item>a>.guide-item-top>.guide-notes>span:nth-child(2){
+  color:#fff;
+}
+.guide>.guide-top>.guide-item>a>.blue:hover>.guide-notes>span{
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.9);
+}
+.guide>.guide-top>.guide-item>a>.blue:hover>.guide-notes>span:nth-child(2){
+  text-decoration: underline;
+}
+.guide>.guide-top>.guide-item>a>.guide-item-top>.guide-app>span{
+  transition:all .2s linear;
+}
+.guide>.guide-top>.guide-item>a>.guide-item-top>.guide-app>span:nth-child(1){
+  width:234px;
+  height:40px;
+  line-height:40px;
+  font-size: 25px;
+  color:#fff;
+}
+.guide>.guide-top>.guide-item>a>.guide-item-top>.guide-app>span:nth-child(2),
+.guide>.guide-top>.guide-item>a>.guide-item-top>.guide-app>span:nth-child(3){
+  color:#fff;
+}
+.guide>.guide-top>.guide-item>a>.green:hover>.guide-app>span{
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.9);
+}
+.guide>.guide-top>.guide-item>a>.green:hover>.guide-app>span:nth-child(2),
+.guide>.guide-top>.guide-item>a>.green:hover>.guide-app>span:nth-child(3){
+  text-decoration: underline;
+}
+/*5.2内容头部样式*/
+.guide>.guide-middle{
+  width:1280px;
+  height:50px;
+  /*border:1px solid black;*/
+  margin:30px auto;
+  display: flex;
+  justify-content: center;
+}
+.guide>.guide-middle>div{
+  height:50px;
+  line-height: 50px;
+  font-size: 25px;
+  /*border:1px solid black;*/
+  margin-right: 10px;
+}
+.guide>.guide-middle>a{
+  height:50px;
+  line-height: 60px;
+}
+.guide>.guide-middle>a:hover{
+  color:#FF9D00;
+}
+/*5.3内容主体样式*/
+.guide>.guide-content{
+  width:1280px;
+  height:300px;
+  /*border:1px solid black;*/
+  margin:10px auto;
+  display: flex;
+  justify-content: center;
+}
+.guide>.guide-content>ul>li>a{
+  position: relative;
+}
+.guide>.guide-content>ul>li>a>img{
+  border-radius: 5px;
+}
+.guide>.guide-content>ul{
+  position: relative;
+  width:1280px;
+  display:flex;
+  justify-content:space-between;
+}
+.guide>.guide-content>ul>li>.guide-info>a{
+  width:130px;
+  height:20px;
+  line-height: 22px;
+  overflow: hidden;
+  font-size: 14px;
+}
+.guide>.guide-content>ul>li>.guide-info>a:hover{
+  color:#2F81A9;
+}
+.guide>.guide-content>ul>li>.guide-info>.date-and-size{
+  display: flex;
+  justify-content:space-between;
+  font-size: 14px;
+  color: #726e5e;
+}
+/**** 5.人气指南样式 end ****/
+/**** 6.旅行者游记样式 start ****/
+/*6.整体样式*/
+.travel-notes{
+  width:1280px;
+  height:520px;
+  margin-top:30px;
+  /*border:1px solid black;*/
+}
+/*6.1头部样式*/
+.travel-notes>.notes-top{
+  width:1280px;
+  height:50px;
+  /*border:1px solid black;*/
+  display: flex;
+  justify-content: center;
+}
+.travel-notes>.notes-top>div{
+  height:50px;
+  line-height: 50px;
+  font-size: 25px;
+  /*border:1px solid black;*/
+  margin-right: 10px;
+}
+.travel-notes>.notes-top>a{
+  height:50px;
+  line-height: 60px;
+}
+.travel-notes>.notes-top>a:hover{
+  color:#FF9D00;
+}
+/*6.2主体样式*/
+.travel-notes>.notes-content{
+  width:1275px;
+  margin-top: 30px;
+  display:flex;
+  justify-content:space-between;
+}
+.travel-notes>.notes-content>.content-box{
+  width:300px;
+  height:375px;
+  /*border:1px solid black;*/
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+  background:#fff;
+}
+.travel-notes>.notes-content>.content-box>.content-img{
+  width:300px;
+  height:200px;
+  background: #acacac;
+  /*border:1px solid black;*/
+}
+.travel-notes>.notes-content>.content-box>.content-img>a>img{
+  width:300px;
+  height:200px;
+}
+.travel-notes>.notes-content>.content-box>.content-tit{
+  width:280px;
+  height:175px;
+  /*border:1px solid black;*/
+  margin:0 auto;
+  overflow: hidden;
+
+}
+.travel-notes>.notes-content>.content-box>.content-tit>a>.title{
+  height:30px;
+  line-height: 30px;
+  font-size: 18px;
+  margin:10px 10px;
+  white-space:nowrap;
+  text-overflow:ellipsis;
+  overflow: hidden;
+}
+.travel-notes>.notes-content>.content-box>.content-tit>.dest-info{
+  height:15px;
+  line-height: 15px;
+  font-size: 12px;
+  margin:0 10px;
+  color: #726e5e;
+  white-space:nowrap;
+  text-overflow:ellipsis;
+  overflow: hidden;
+}
+.travel-notes>.notes-content>.content-box>.content-tit>.text-brief{
+  height:60px;
+  line-height: 20px;
+  margin:10px 10px;
+  /*white-space:nowrap;*/
+  text-overflow:ellipsis;
+  overflow: hidden;
+}
+.travel-notes>.notes-content>.content-box>.content-tit>.author-info{
+  height:15px;
+  line-height: 15px;
+  font-size: 12px;
+  margin:10px 10px;
+}
+.travel-notes>.notes-content>.content-box>.content-tit>.author-info>.publish-date{
+  margin-left: 5px;
+}
+
+/**** 6.旅行者游记样式 end ****/

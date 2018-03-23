@@ -1,0 +1,98 @@
+/*获取焦点和失去焦点的样式*/
+$(()=>{
+  $(".register>div").on("focus","input",getFocus);
+  $(".register>div").on("blur","input",getBlur);
+});
+/*表单验证*/
+$(()=>{
+  $("form").validate({
+    submitHandler(form){
+      $.ajax({
+        type:"post",
+        url:"data/users/register.php",//提交注册信息给数据库
+        data:$(form).serialize()
+      }).then(text=>{
+        if(text){
+          // alert("注册成功!");
+          hiAlert("注册成功!","提示",function(){
+            if(location.search!==""){
+              var back=location.search.slice(6);
+              location=back;
+            }else{
+              location="../index.html";
+            }
+          })
+        }else{
+          // alert("注册失败，请重新注册!");
+          hiAlert("注册失败，请重新注册!","提示");
+        }//返回是否成功注册
+      })
+    },
+    validClass:"check",//暂时未知点用，只能更改自身样式，不修改lable
+    rules:{
+      uname:{
+        required:true,
+        string:"uname",
+        alnum:"uname",
+        rangelength:[3,9],
+        remote:"data/users/verify.php"//验证用户名
+      },
+      upwd:{
+        required:true,
+        rangelength:[6,8]
+      },
+      rpwd:{
+        required:true,
+        equalTo:"[name=upwd]"
+      },
+      phone:{
+        required:true,
+        phone:"phone",
+        remote:"data/users/verify.php"//验证手机号码
+      },
+      gender:{
+        required:true,
+        gender:"gender"
+      },
+      uemail:{
+        required:true,
+        email:true
+      },
+      check:{
+        required:true
+      }
+    },
+    messages:{
+      uname:{
+        required:"请输入用户名!",
+        rangelength:"用户名必须介于3~9位之间!",
+        remote:"用户名已被占用!"
+      },
+      upwd:{
+        required:"请输入密码!",
+        rangelength:"密码必须介于6~8位之间!"
+      },
+      rpwd:{
+        required:"请重复密码!",
+        equalTo:"两次密码输入不一致!"
+      },
+      phone:{
+        required:"请输入有效的手机号码!",
+        remote:"该号码已注册!"
+      },
+      uemail:{
+        required:"请输入有效的电子邮件地址!",
+        email:"请输入有效的电子邮件地址!"
+      },
+      check:{
+        required:"确认是否同意隐私协议!"
+      }
+    }
+  });
+  //模拟触发按键
+  $(window).keyup=(e=>{
+    if(e.keyCode==13){
+      $("form").validate();
+    }
+  });
+});

@@ -1,0 +1,28 @@
+/*验证样式*/
+.vali_info{/*页面初始，验证消息不显示*/
+  display:none;
+}
+.txt_focus{/*当文本框获得焦点时穿上*/
+  border-top:2px solid black;
+  border-left:2px solid black;
+}/*当文本框失去焦点时脱下*/
+/*验证轮播图*/
+.banner>.banImg{
+  width:100%;
+  height:100%;
+  position:absolute;
+  top:0;
+  left:0;
+  opacity:0;
+  transition:all 6s linear;
+  overflow:hidden;
+}
+.banner>.show{
+  opacity:1;
+  z-index:1;
+}
+.banner>.banImg>img{
+  width:100%;
+  height:100%;
+  /*transition:all 3s linear;*/
+}

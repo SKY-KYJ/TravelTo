@@ -1,0 +1,259 @@
+/*样式重写*/
+*{
+  margin:0;
+  padding:0;
+}
+body{
+  font-size:16px;
+}
+header,footer,nav,aside,section{
+  display:block;
+}
+p,h1,h2,h3,h4,h5,h6,ul,ol,dl,dd{
+  list-style-type:none;
+}
+a{
+  color:#000;
+  display:inline-block;
+  text-decoration:none;
+}
+a:hover{
+  color:#000;
+}
+span{
+  display:inline-block;
+}
+img{
+  vertical-align:middle;
+}
+.clear:after{
+  content:"";
+  display:block;
+  clear:both;
+}
+.lf{
+  float:left;
+}
+.rt{
+  float:right;
+}
+/*加载中样式*/
+.loading>.img{
+  max-width: 40px;
+  max-height: 40px;
+  position:absolute;
+  left:0;
+  right:0;
+  top:0;
+  bottom:0;
+  margin:auto;
+}
+/*按键样式*/
+.btn-dnld,.dest-icon,.btn-search{
+  background-image:url("../img/app/button.png");
+}
+.btn-dnld{
+  position: absolute;
+  width: 31px;
+  height: 31px;
+  right: 5px;
+  bottom: 5px;
+  line-height: 38px;
+  font-size: 14px;
+  color: #2c2c2c;
+  background-position: 0 201px;
+}
+.btn-dnld:hover{
+  background-position: 0 151px;
+}
+.dest-icon{
+  width: 11px;
+  height: 14px;
+  background-position: 0 100px;
+}
+.btn-search{
+  position:absolute;
+  width:23px;
+  height:23px;
+  background-position:0 -850px;
+  right:5px;
+  bottom:5px;
+}
+.btn-search-hover{
+  position:absolute;
+  width:23px;
+  height:23px;
+  background-position:0 -900px;
+  right:5px;
+  bottom:5px;
+}
+/**** 2.面包屑导航样式 start ****/
+.bread-crumb{
+  padding-left:10px ;
+  line-height:30px;
+  font-size: 14px;
+  font-weight:bold;
+}
+.bread-crumb>a:hover{
+  color:#FF6600;
+}
+/**** 2.面包屑导航样式 end ****/
+
+/**** 3.弹出提示框样式 start ****/
+#popup_container {
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  min-width: 360px; /* Dialog will be no smaller than this */
+  _width: 360px;
+  max-width: 600px; /* Dialog will wrap after this width */
+  background: #fff;
+  border: solid 1px #99b1c4;
+  color: #000;
+  /*z-index: 2000;*/
+}
+
+/*corner style*/
+#cbl, #cbr {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  overflow: hidden;
+  font-style: normal;
+  z-index: 99999;
+  background: #fff url(../img/app/corners.gif) no-repeat;
+}
+
+#ctl {
+  top: -1px;
+  left: -1px;
+  background-position: 0 0;
+  background-color: #3097ca;
+}
+
+#ctr {
+  top: -1px;
+  right: -1px;
+  background-position: -5px 0;
+  background-color: #3097ca;
+}
+
+#cbl {
+  bottom: -1px;
+  left: -1px;
+  background-position: 0 -5px;
+}
+
+#cbr {
+  bottom: -1px;
+  right: -1px;
+  background-position: -5px -5px;
+}
+
+/*corner style over*/
+
+#popup_title {
+  font-size: 12px;
+  font-weight: bold;
+  text-align: left;
+  line-height: 1.9em;
+  color: #fff;
+  background: url(../img/app/title.gif) repeat-x 0px -2px;
+  border-bottom: solid 1px #ccc;
+  cursor: default;
+  padding: 0 0 0 8px;
+  margin: 0em;
+}
+
+#popup_close {
+  position: absolute;
+  right: 7px;
+  top: 4px;
+  width: 16px;
+  height: 16px;
+  background: url(../img/app/close.gif) no-repeat;
+  cursor: pointer;
+}
+
+#popup_close:hover {
+  /* -moz-opacity:0.8;
+   opacity:0.8;
+   filter:alpha(opacity=80);*/
+  background: url(../img/app/close.gif) no-repeat -17px 0;
+}
+
+#popup_content {
+  background: 16px 16px no-repeat;
+  padding: 20px 12px 10px 12px;
+  margin: 0em;
+}
+
+#popup_container .alert {
+  background-image: url("../img/app/important.gif");
+  background-position: 20px 18px
+}
+
+#popup_container .confirm {
+  background-image: url(../img/app/important.gif);
+  background-position: 20px 14px
+}
+
+#popup_container .prompt {
+  background-image: url(../img/app/help.gif);
+  background-position: 20px 14px;
+}
+
+#popup_message {
+  padding-left: 60px;
+  font-size: 13px
+}
+
+#popup_panel {
+  text-align: right;
+  border-top: 1px solid #d7d7d7;
+  margin: 1em 0em 0em 1em;
+  padding-top: 10px
+}
+
+#popup_ok, #popup_cancel {
+  width: 58px;
+  height: 24px;
+  line-height: 24px;
+  background: url(../img/app/btn.gif) no-repeat;
+  padding: 0 4px;
+  font-size: 12px;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+}
+
+#popup_prompt {
+  margin: .5em 0em;
+}
+
+#popup_content.openBox {
+  padding: 12px;
+  background: none;
+}
+
+.openBox #popup_message {
+  padding: 0;
+  overflow: auto;
+}
+
+#over_container {
+  min-width: 300px; /* Dialog will be no smaller than this */
+  background: #ffd6ae;
+  border: 1px solid #ffa42d;
+  color: #000;
+}
+
+#over_message {
+  text-align: center;
+  padding: 10px 20px;
+}
+
+#over_container.over_3 {
+  background: #FFF2F2;
+  border: 1px solid #FF8080;
+}
+/**** 2.弹出提示框样式 end ****/

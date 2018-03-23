@@ -1,0 +1,53 @@
+$(()=>{
+  $(".login>div").on("focus","input",getFocus);
+  $(".login>div").on("blur","input",getBlur);
+});
+$(()=>{
+  $("form").validate({
+    submitHandler(form){
+      $.post("data/users/login.php",//提交登录信息给数据库
+        $(form).serialize()
+      ).then(text=>{
+        if(text=="false"){
+          $(form)[0].reset();
+          //alert("用户名或密码不正确!");
+          hiAlert("用户名或密码不正确!","提示");
+        }else{
+          //alert("登录成功,正在跳转跳转回原来页面!");
+          hiAlert("登录成功,正在跳转跳转回原来页面!","提示",function(){
+            if(location.search!==""){
+              var back=location.search.slice(6);
+              location=back;
+            }else{
+              location="index.html";
+            }
+          });
+        }
+      })
+    },
+    rules:{
+      uname:{
+        required:true
+        // remote:"data/users/verify.php"//验证用户名
+      },
+      upwd:{
+        required:true
+      }
+    },
+    messages:{
+      uname:{
+        required:"请输入用户名!",
+        remote:"没有该用户存在!"
+      },
+      upwd:{
+        required:"请输入密码!"
+      }
+    }
+  });
+  //模拟触发按键
+  $(window).keyup=(e=>{
+    if(e.keyCode==13){
+      $("form").validate();
+    }
+  });
+});

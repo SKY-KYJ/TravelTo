@@ -1,0 +1,521 @@
+#MAINWRAP {
+  padding: 0;
+  background-image: none;
+  background-color: #fff;
+  -webkit-font-smoothing: initial;
+}
+
+#MAINWRAP #BODYCON {
+  width: auto;
+}
+
+#PAGE #MAIN {
+  padding: 0;
+  width: 100%;
+  min-height: 300px;
+  border: none;
+  font: normal normal 1em/1.2 arial, "Heiti SC", "Microsoft YaHei", SimSun, sans-serif;
+  color: #666;
+  background-color: transparent;
+}
+
+.domn_zh_CN #FOOT_CONTAINER {
+  margin-top: 0;
+}
+
+.section {
+  margin: 20px auto;
+  width: 990px;
+}
+
+.guide-main {
+  padding-bottom: 80px;
+}
+
+.section .caption {
+  font-size: 1.5em;
+  font-weight: bold;
+  line-height: 40px;
+  color: #666;
+}
+
+#gotoTop {
+  _display: none;
+  margin-left: 525px;
+  width: 40px;
+  height: 40px;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .3s ease-in, visibility .5s linear;
+  position: fixed;
+  left: 50%;
+  bottom: 30px;
+}
+
+#gotoTop.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+#gotoTop img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url(../images/sprite_cityguide_list_rd-v1046352924.png) no-repeat scroll 13px -179px #ccc;
+  _background-image: url(../images/sprite_cityguide_list_rd_ie6-v2589876328.png);
+}
+
+#gotoTop img:hover {
+  background-color: #00a680;
+}
+
+.top-slide {
+  margin: 0 0 20px 0;
+  padding: 0;
+  width: 100%;
+  height: 320px;
+  overflow: hidden;
+  position: relative;
+}
+
+.slide-cont-item {
+  visibility: hidden;
+  width: 100%;
+  height: 320px;
+  position: absolute;
+  background: none scroll no-repeat center 0;
+}
+
+.slide-cont .active {
+  visibility: visible;
+}
+
+.slide-link {
+  display: block;
+  margin: 0 auto;
+  width: 990px;
+  height: 100%;
+  overflow: hidden;
+}
+
+.slide-nav {
+  margin-left: -58px;
+  padding: 10px;
+  overflow: hidden;
+  position: absolute;
+  left: 50%;
+  bottom: 10px;
+}
+
+.slide-nav-item {
+  margin-left: 10px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: #fff;
+  cursor: pointer;
+  filter: alpha(opacity=30);
+  opacity: .3;
+  float: left;
+}
+
+.slide-nav .active {
+  filter: alpha(opacity=100);
+  opacity: 1;
+}
+
+.recommends .guide-list {
+  padding: 20px 0;
+  background-color: #f6f6f6;
+  overflow: hidden;
+}
+
+.recommends .guide {
+  _display: inline;
+  margin: 0 0 0 -3px;
+  padding: 0 25px;
+  width: 114px;
+  border-left: 3px dotted #e9e9e9;
+  float: left;
+}
+
+.guide-photo-link {
+  display: block;
+  padding: 6px;
+  border: 1px solid #dedede;
+  background-color: #fff;
+}
+
+.guide-photo-link:hover {
+  border-color: #00a680;
+  box-shadow: 0 0 0 1px #00a680 inset;
+}
+
+.recommends .guide-photo {
+  display: block;
+  width: 100%;
+  height: 142px;
+}
+
+.recommends .guide-city-name {
+  width: 100%;
+  font-weight: bold;
+  line-height: 2.5em;
+  color: #666;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.recommends .download-btn {
+  display: block;
+  width: 100%;
+  border-radius: 3px;
+  font-size: 1.2em;
+  line-height: 2.2;
+  color: #fff;
+  background-color: #f60;
+  text-align: center;
+  transition: background-color .1s ease-out;
+}
+
+.recommends .download-btn:hover {
+  color: #fff;
+  text-decoration: none;
+  background-color: #ee5f00;
+}
+
+.guide-left-sidebar {
+  width: 300px;
+  float: left;
+}
+
+#anchor_box {
+  background-color: #fff;
+  overflow: hidden;
+  *zoom: 1;
+}
+
+.guide-nav {
+  line-height: 40px;
+}
+
+.guide-nav-item {
+  margin: 5px 0;
+  padding-left: 40px;
+  border: 1px solid #dedede;
+  font-size: 1.2em;
+  background: url(../images/sprite_cityguide_list_rd-v1046352924.png) no-repeat scroll 16px 12px #daddda;
+  _background-image: url(../images/sprite_cityguide_list_rd_ie6-v2589876328.png);
+  cursor: pointer;
+  position: relative;
+}
+
+.guide-nav-item:hover {
+  background-color: #ccc;
+}
+
+.guide-nav .active {
+  color: #fff;
+  background-color: #007C60;
+  cursor: default;
+}
+
+.guide-nav-name {
+  display: block;
+  padding: 0 10px;
+  background-color: #fff;
+}
+
+.guide-nav-item:hover .guide-nav-name {
+  background-color: #f0f0f0;
+}
+
+.guide-nav .active .guide-nav-name {
+  background-color: #00a680;
+}
+
+.guide-nav-count {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 10px;
+}
+
+.guide-apps {
+  margin: 30px 0;
+  padding-left: 70px;
+  width: 230px;
+  height: 60px;
+  background: url(../images/sprite_cityguide_list_rd-v1046352924.png) no-repeat scroll 0 -40px transparent;
+  _background-image: url(../images/sprite_cityguide_list_rd_ie6-v2589876328.png);
+}
+
+.guide-app-name {
+  margin: 5px 0;
+  font-size: 1.5em;
+  line-height: 1.6;
+  color: #333;
+}
+
+.guide-app-list {
+  color: #333;
+  overflow: hidden;
+}
+
+.guide-app-item {
+  position: relative;
+  left: -6px;
+  padding: 0 5px;
+  height: 1em;
+  border-left: 1px solid #d6d6d6;
+  line-height: 1;
+  float: left;
+}
+
+.guide-expect {
+  width: 100%;
+  height: 180px;
+  color: #999;
+  background: url(../images/cover_expect.jpg) no-repeat scroll 0 0 transparent;
+  overflow: hidden;
+}
+
+.guide-expect-form {
+  margin-top: 110px;
+  padding-left: 105px;
+  word-spacing: 10px;
+  position: relative;
+}
+
+.guide-expect-form .input, .guide-expect-form .submit {
+  height: 26px;
+  border: none;
+  vertical-align: middle;
+}
+
+.guide-expect-form .input {
+  padding: 0 5px;
+  width: 100px;
+  line-height: 16px;
+  color: #999;
+  background-color: #fff;
+  vertical-align: middle;
+}
+
+.guide-expect-form .submit {
+  width: 60px;
+  border-radius: 1px;
+  font-size: 1.2em;
+  line-height: 26px;
+  color: #fff;
+  background-color: #f60;
+  vertical-align: middle;
+}
+
+.guide-expect-form .hint {
+  padding: 0 5px;
+  width: 170px;
+  visibility: hidden;
+  opacity: 0;
+  height: 1.8em;
+  line-height: 1.8em;
+  color: #f00;
+  background-color: #F5F5DC;
+  transition: opacity .5s ease-out;
+  position: absolute;
+  top: -1.8em;
+}
+
+.guide-expect .done .hint-done, .guide-expect .failed .hint-failed, .guide-expect .empty .hint-empty {
+  visibility: visible;
+  opacity: 1;
+}
+
+.guide-expect .done .hint-done {
+  color: #00a680;
+  transition: opacity .5s ease-out, visibility .5s linear;
+}
+
+.guide-expert-recruit {
+  margin: 20px 0;
+}
+
+.guide-recruit-link {
+  display: block;
+}
+
+.guide-recruit-cover {
+  display: inline-block;
+  width: 100%;
+  min-height: 180px;
+}
+
+.guides {
+  width: 660px;
+  color: #666;
+  float: right;
+  position: relative;
+}
+
+.guides .guide-sort-rules {
+  padding: 14px 0;
+  height: 1em;
+  line-height: 1;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.guides .guide-sort-rules:after {
+  content: "";
+  width: 1px;
+  height: 1em;
+  background-color: #666;
+  position: absolute;
+  top: 15px;
+  left: 50%;
+}
+
+.guides .guide-sort-rule {
+  display: inline;
+  padding: 0 5px;
+}
+
+.guides .guide-sort-name {
+  color: #666;
+  cursor: pointer;
+}
+
+.guides .guide-sort-rules .active .guide-sort-name {
+  color: #00a680;
+  cursor: default;
+}
+
+.guides .guide-subTags {
+  margin: 5px 0 5px -10px;
+  line-height: 1.5;
+  overflow: hidden;
+}
+
+.guides .guide-subTag {
+  margin-left: 10px;
+  white-space: nowrap;
+  float: left;
+}
+
+.guides .guide-subTag-name {
+  display: inline-block;
+  color: #666;
+  cursor: pointer;
+}
+
+.guides .guide-subTag-name:hover {
+  color: #00a680;
+}
+
+.guides .active .guide-subTag-name {
+  color: #00a680;
+  cursor: default;
+}
+
+.guides .guide-list {
+  margin: -15px 0 0 -25px;
+  overflow: hidden;
+  transition: height .5s ease-in 0;
+  *position: relative;
+}
+
+.guides .guide {
+  _display: inline;
+  margin: 20px 0 20px 25px;
+  width: 146px;
+  float: left;
+}
+
+.guides .guide-photo-link {
+  display: block;
+  margin-bottom: 5px;
+  padding: 7px;
+  border: 1px solid #dedede;
+  position: relative;
+}
+
+.guides .guide-photo-link:hover {
+  border-color: #00a680;
+  box-shadow: 0 0 0 1px #00a680 inset;
+}
+
+.guides .guide-photo {
+  display: block;
+  width: 100%;
+  height: 184px;
+}
+
+.guides .new-guide {
+  display: block;
+  width: 46px;
+  height: 46px;
+  background: url(../images/sprite_cityguide_list_rd-v1046352924.png) no-repeat scroll 0 -130px transparent;
+  _background-image: url(../images/sprite_cityguide_list_rd_ie6-v2589876328.png);
+  position: absolute;
+  top: -1px;
+  right: -1px;
+}
+
+.guides .guide-city-name {
+  font-weight: bold;
+  line-height: 2em;
+}
+
+.guides .guide-list .separator {
+  display: block;
+  margin-left: 25px;
+  height: 0;
+  border-bottom: 1px solid #e9e9e9;
+  clear: both;
+  *font-size: 0;
+  *line-height: 0;
+}
+
+.guides .guide-more {
+  visibility: hidden;
+  opacity: 0;
+  border-radius: 3px;
+  line-height: 3;
+  color: #333;
+  background-color: #f2f2f2;
+  text-align: center;
+  transition: opacity .5s ease-out, visibility .5s linear, background-color .2s linear;
+}
+
+.guides .guide-more-visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.guides .guide-more:hover {
+  background-color: #e4e4e4;
+}
+
+.guides .loading-tips {
+  margin: 15px auto;
+  padding: 10px;
+  height: 16px;
+  line-height: 16px;
+  color: #999;
+  text-align: center;
+}
+
+.guides .loading-icon {
+  display: inline-block;
+  margin-right: 5px;
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+}
+
+.guides .loading-text {
+  display: inline-block;
+  vertical-align: middle;
+}

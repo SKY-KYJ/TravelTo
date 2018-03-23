@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>用户登录 - TravelAdvenTo(旅游去)</title>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/header.css"/>
+    <link rel="stylesheet" href="css/login.css"/>
+    <link rel="stylesheet" href="css/verify.css"/>
+  </head>
+  <body>
+    <form>
+      <header class="header"></header>
+      <section class="main">
+        <div class="banner">
+          <div class="banImg show" id="ban1">
+            <img src="img/banner/banner01.jpg" alt=""/>
+          </div>
+          <div class="banImg"  id="ban2">
+            <img src="img/banner/banner02.jpg" alt=""/>
+          </div>
+          <div class="banImg"  id="ban3">
+            <img src="img/banner/banner03.jpg" alt=""/>
+          </div>
+          <div class="banImg"  id="ban4">
+            <img src="img/banner/banner04.jpg" alt=""/>
+          </div>
+        </div>
+        <div class="login">
+          <div class="uname">
+            <div>用户名:</div>
+            <input type="text" name="uname">
+          </div>
+          <div class="upwd">
+            <div>登录密码:</div>
+            <input type="password" name="upwd">
+          </div>
+          <div class="log-btn">
+            <input type="submit" value="登录" name="sub">
+            <b></b>
+            <div><a href="index.html">返回</a></div>
+          </div>
+          <p class="reg-btn">
+            <a href="register.html">快速注册</a>
+          </p>
+        </div>
+      </section>
+    </form>
+    <!-- 运行脚本 -->
+    <script src="js/jquery-3.2.0.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.alert.js"></script>
+    <script src="js/jquery.validate.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/user/verify.js"></script>
+    <script src="js/user/login.js"></script>
+  </body>
+</html>

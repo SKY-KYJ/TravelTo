@@ -1,0 +1,301 @@
+/**** 整体样式 start ****/
+body{
+  background:#e8e8e8;
+  width: 1280px;
+  margin: 0 auto;
+}
+nav{
+  width: 1280px;
+  height: 30px;
+  overflow: hidden;
+  margin:15px auto;
+  position: relative;
+}
+section{
+  overflow: hidden;
+  margin: 0 auto;
+  position: relative;
+}
+.products-main{
+  margin-bottom: 30px;
+}
+/**** 整体样式 end ****/
+/**** 2.面包屑导航样式 start ****/
+.bread-crumb{
+  padding-left:10px ;
+  line-height:30px;
+  font-size: 14px;
+  font-weight:bold;
+}
+.bread-crumb>a:hover{
+  color:#FF6600;
+}
+/**** 2.面包屑导航样式 end ****/
+/**** 3.产品选择器样式 start ****/
+/*3.整体样式*/
+.select{
+  width:975px;
+  /*min-height:250px;*/
+  /*border:1px solid black;*/
+  float:left;
+}
+/*3.1产品选项样式*/
+.select>.select-list>.select-box{
+  /*width:975px;*/
+  height:40px;
+  line-height: 40px;
+  /*border:1px solid black;*/
+}
+.select>.select-list>.select-box>span{
+  width:75px;
+  height:38px;
+  line-height:38px;
+  /*border-right:1px solid black;*/
+  float:left;
+}
+.select>.select-list>.select-box>div{
+  width:24px;
+  height:24px;
+  margin:8px 5px;
+  /*border:1px solid black;*/
+  background: url("../img/app/products_list.png") no-repeat;
+  float:left;
+}
+.select>.select-list>.theme>div{
+  background-position: 0px -437px;
+}
+.select>.select-list>.destination>div{
+  background-position: 0px -531px;
+}
+.select>.select-list>.origin>div{
+  background-position: 0px -341px;
+}
+.select>.select-list>.days>div{
+  background-position: 0px -437px;
+}
+.select>.select-list>.select-box>ul>li{
+  float:left;
+  margin:auto 10px;
+}
+.select>.select-list>.select-box>ul>li>span{
+  cursor: pointer;
+  /*color: #666666;*/
+  /*font-size: 14px;*/
+  /*display: inline-block;*/
+  padding: 0 10px;
+  font-style: normal;
+  border: 1px solid #c0c0c0;
+  line-height: 30px;
+  height: 30px;
+}
+.select>.select-list>.select-box>ul>li>span.selected_sucaihuo{
+  line-height: 32px;
+  border: 2px solid #e9630a;
+  height: 32px;
+  position: relative;
+  padding: 0 9px;
+}
+.select>.select-list>.select-box>ul>li>span.selected_sucaihuo>i{
+  display: block;
+  width: 15px;
+  height: 14px;
+  background: url(../img/app/righbt.png) no-repeat 0 0;
+  right: -1px;
+  bottom: -1px;
+  position: absolute;
+}
+.select>.select-list>hr{
+  margin:15px 20px 0;
+}
+
+
+/**** 3.产品选择器样式 end ****/
+/**** 4.推荐产品样式 start ****/
+/*4.整体样式*/
+.product-boutique{
+  width:300px;
+  min-height:900px;
+  border:1px solid black;
+  float:right;
+}
+
+
+/**** 4.推荐产品样式 end ****/
+/**** 5.产品列表样式 start ****/
+/*5.整体样式*/
+.product-list{
+  width:975px;
+  min-height:500px;
+  /*border:1px solid black;*/
+  float:left;
+}
+/*5.1产品主体样式*/
+.product-list>.products>.product-box{
+  width:970px;
+  height:150px;
+  margin:20px auto;
+  border:1px solid black;
+  display: flex;
+  justify-content:center;
+}
+.product-list>.products>.product-box>.product-left{
+  width:225px;
+  height:150px;
+  border-right:1px solid black;
+}
+.product-list>.products>.product-box>.product-left>a>img{
+  width:225px;
+  height:150px;
+}
+.product-list>.products>.product-box>.product-content{
+  width:595px;
+  height:150px;
+  /*border:1px solid black;*/
+}
+.product-list>.products>.product-box>.product-content>.title{
+  width:580px;
+  height:55px;
+  padding:10px 10px;
+  line-height: 25px;
+  font-size:17px;
+  /*border:1px solid black;*/
+}
+/*.product-list>.products>.product-box>.product-content>.title>a{*/
+  /*color: #ff6c10;*/
+/*}*/
+.product-list>.products>.product-box>.product-content>.theme{
+  width:580px;
+  height:20px;
+  padding:5px 10px;
+  line-height: 20px;
+  /*border:1px solid black;*/
+}
+.product-list>.products>.product-box>.product-content>.theme>span{
+  margin-left:10px;
+  padding:3px;
+  color:#FF6600;
+  border:1px dashed #FF6600;
+}
+.product-list>.products>.product-box>.product-content>.origin,.product-list>.products>.product-box>.product-content>.destination{
+  float:left;
+  height:20px;
+  margin-top: 5px;
+  padding:5px 10px;
+  line-height: 20px;
+  /*border:1px solid black;*/
+}
+.product-list>.products>.product-box>.product-content>span{
+  float:left;
+  height:20px;
+  margin-top: 5px;
+  padding:5px 5px;
+  line-height: 20px;
+  /*border:1px solid black;*/
+}
+.product-list>.products>.product-box>.product-content>.theme>span{
+
+}
+.product-list>.products>.product-box>.product-right{
+  width:150px;
+  height:150px;
+  /*border:1px solid black;*/
+}
+.product-list>.products>.product-box>.product-right>.price{
+  width:150px;
+  height:50px;
+  text-align:center;
+  margin-top: 20px;
+  color:#FF6600;
+  font-size: 25px;
+  line-height: 50px;
+  /*border:1px solid black;*/
+}
+.product-list>.products>.product-box>.product-right>.a{
+  width:150px;
+  height:20px;
+  margin-top: 10px;
+  line-height:20px;
+  /*border:1px solid black;*/
+}
+/*5.2分页样式*/
+.product-list>.pages{
+  /*padding:0px 20px;*/
+  text-align:center;
+  /*background:linear-gradient(to top , #f5f4f5,#e6e6e5);*/
+  /*height:40px;*/
+  /*line-height:40px;*/
+}
+/*.product-list>.pages>a{*/
+  /*padding:4px 10px;*/
+  /*border:1px solid #ddd;*/
+  /*border-radius:4px;*/
+  /*color:#0aa1ed;*/
+/*}*/
+/*.product-list>.pages>a.current{*/
+  /*border-color:#0aa1ed;*/
+  /*background:#0aa1ed;*/
+  /*color:#fff;*/
+/*}*/
+/*.product-list>.pages>a.disabled{*/
+  /*color:#bfbfbf;*/
+  /*background:#f2f2f2;*/
+  /*border:1px solid #bfbfbf;*/
+/*}*/
+.whj_jqueryPaginationCss-2{
+  display: inline-block;
+  padding: 5px;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+.whj_jqueryPaginationCss-2 div{
+  display: inline-block;
+  vertical-align: bottom;
+  height: 24px;
+  line-height: 24px;
+}
+.whj_jqueryPaginationCss-2 .whj_padding{
+  padding: 1px 9px;
+}
+.whj_jqueryPaginationCss-2 .whj_bgc{
+  background-color: #FF6600;
+  color: #fff;
+}
+.whj_jqueryPaginationCss-2 .whj_border{
+  border: 1px solid #FF6600;
+}
+.whj_jqueryPaginationCss-2 .whj_color{
+  color: #FF6600;
+}
+.whj_jqueryPaginationCss-2 .whj_hover:hover{
+  background-color: #ffdfce;
+  color: #FF6600;
+  cursor: pointer;
+}
+.whj_jqueryPaginationCss-2 .whj_checked{
+  background-color: #ffdfce;
+  color: #FF6600;
+}
+.whj_jqueryPaginationCss-2 .whj_hoverDisable{
+  opacity: 0.7;
+}
+.whj_jqueryPaginationCss-2 select{
+  height: 28px;
+  vertical-align: bottom;
+  padding: 0px;
+  outline: none;
+}
+.whj_jqueryPaginationCss-2 input{
+  padding: 0px;
+  height: 26px;
+  outline: none;
+  text-align: center;
+  width: 60px;
+  vertical-align: bottom;
+}
+.whj_jqueryPaginationCss-2 div,.whj_jqueryPaginationCss-2 input,.whj_jqueryPaginationCss-2 select{
+  margin: 2px;
+}
+
+/**** 5.产品列表样式 end ****/

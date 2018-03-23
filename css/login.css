@@ -1,0 +1,67 @@
+.login{
+  width: 300px;
+  height: 150px;
+  background: rgba(220, 220, 220, 0.8);
+  border:1px solid #eee;
+  border-radius: 5px;
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.6);
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  margin:auto;
+  padding:25px;
+  z-index:1000;
+}
+.login>div{
+  height:50px;
+  /*border:1px solid red;*/
+}
+.login>div>div,.login>div>input{
+  float:left;
+}
+.login>div>div{
+  width:70px;
+  height:40px;
+  line-height: 40px;
+  text-align:right;
+  padding-right:10px;
+}
+.login>div>input{
+  width:200px;
+  height:20px;
+  margin-top:8px;
+  margin-right:10px;
+}
+.login>.log-btn>input{
+  width:120px;
+  height:30px;
+  background: linear-gradient(to bottom,#ff8e00,#FF6600);
+  border-radius: 5px;
+  margin-top:5px;
+  margin-left:75px;
+  color:#ffffff;
+}
+.login a{
+  color: #536aff;
+  text-decoration:underline;
+}
+.login>.log-btn>div{
+  width:40px;
+  height:30px;
+}
+.login>.reg-btn{
+  text-align:center;
+  font-size: 14px;
+}
+.login>div>label{
+  background-image:url("../img/register/err.png");
+  background-repeat:no-repeat;
+  width:170px;
+  height:20px;
+  padding-left:20px;
+  line-height:20px;
+  font-size:12px;
+  color:#ff0000;
+}

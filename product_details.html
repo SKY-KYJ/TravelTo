@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <meta charset="UTF-8">
+    <title>热销推荐 - TravelAdvenTo(旅游去)</title>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/header.css"/>
+    <link rel="stylesheet" href="css/footer.css"/>
+    <link rel="stylesheet" href="css/product_details.css"/>
+  </head>
+  <body>
+    <!-- 1.页头 -->
+    <header class="header">
+      <div class="loading">
+        <img src="img/app/loading.gif" alt="加载中..." />
+      </div>
+    </header>
+    <!-- 2.面包屑导航 -->
+    <nav class="bread-crumb">
+      <a href="index.html">首页</a>
+      <span>&gt;</span>
+      <a href="products.html">旅游商城</a>
+      <span>&gt;</span>
+      <a href="javascript:;" data-main="kw">#产品大类</a>
+      <span>&gt;</span>
+      <span class="title" data-main="title">#产品标题</span>
+    </nav>
+    <!-- 3.产品信息 -->
+    <section class="product-top">
+      <div class="product-details">
+        <!-- 3.1产品预览 -->
+        <div class="preview">
+          <div class="medium loading">
+            <img class="mImg img" src="img/app/loading.gif" alt="加载中"/>
+            <!--<img class="mImg" src="img/product/md/tar_img_md_1-1.jpg" alt=""/>-->
+            <div class="mask"></div>
+            <div class="btn-search"></div>
+            <div class="superMask"></div>
+          </div>
+          <div class="large"></div>
+          <div class="small">
+            <a class="backward disabled"></a>
+            <a class="forward"></a>
+            <ul class="small_list loading">
+              <img class="img" src="img/app/loading.gif" alt="加载中"/>
+              <!--<li><img src="#sm""/></li>-->
+            </ul>
+          </div>
+        </div>
+        <!-- 3.2产品规格 -->
+        <div class="show-details">
+          <h1 data-main="title">#产品标题</h1>
+          <p>
+            服务供应商:旅游去国际旅行社股份有限公司
+          </p>
+          <div class="price">
+            <div class="stu-price">
+              <b>价格:</b>
+              <span>¥</span>
+              <span data-main="price">#产品价格</span>
+            </div>
+            <div class="promise">
+              <b>产品主题:</b>
+              <!--<span data-main="theme">#主题</span>-->
+            </div>
+          </div>
+          <!-- 3.2客服 -->
+          <p class="parameter">
+            <b>客服:</b>
+            <span>联系客服</span>
+            <img src="img/app/wawa.gif">
+          </p>
+          <!-- 3.2出发地 -->
+          <p class="origin">
+            <b>出发地:</b>
+            <span data-main="origin">#出发地</span>
+          </p>
+          <!-- 3.2目的地 -->
+          <p class="destination">
+            <b>目的地:</b>
+            <span data-main="destination">#目的地</span>
+          </p>
+          <!-- 3.2概要 -->
+          <div class="outlines clear">
+            <p>产品概要:</p>
+            <div data-main="outlines" class="btn">
+              #产品概要
+            </div>
+            <span>显示更多详情...</span>
+          </div>
+          <!-- 人数 -->
+          <div class="account">
+            <div>人数:</div>
+            <span class="number-reduce">-</span>
+            <input class="number-content" type="text" value="1" disabled>
+            <span class="number-add">+</span>
+          </div>
+          <!-- 购买部分 -->
+          <div class="shops">
+            <a href="javascript:;" class="buy">立即预订</a>
+            <a href="javascript:;" class="cart">
+              <img src="img/app/product_detail_img7.png" alt="">
+              定制我的行程
+            </a>
+            <a href="javascript:;" class="collection">
+              收藏
+            </a>
+
+          </div>
+        </div>
+        <!-- 3.3产品推荐 -->
+        <div class="recommend">
+          <p>
+            人气推荐
+            <span>大家都在看</span>
+          </p>
+          <div class="demo clear">
+            <div class="demo-content loading">
+              <img class="img" src="img/app/loading.gif" alt="加载中"/>
+              <!--<div class="details_demo lf">-->
+                <!--<a href="#pid}">-->
+                  <!--<img src="#md">-->
+                <!--</a>-->
+                <!--<a href="#pid">-->
+                  <!--<p>#产品标题</p>-->
+                <!--</a>-->
+              <!--</div>-->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 4.产品详情 -->
+    <section class="product-content">
+      <div class="item-info"></div>
+    </section>
+    <!-- 5.页尾 -->
+    <footer class="footer"></footer>
+    <!-- 运行脚本 -->
+    <script src="js/jquery-3.2.0.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.alert.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/products/product_details.js"></script>
+  </body>
+</html>
