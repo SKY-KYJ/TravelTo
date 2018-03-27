@@ -74,7 +74,7 @@ $(()=>{
     //动态加载产品预览图
     var html='';
     for(var pic of imgs){
-     html+=`<li class="pic"><img src="${pic.sm}" data-md="${pic.md}" data-lg="${pic.lg}"></li>`;
+     html+=`<li class="pic"><img src="${pic.md}" data-md="${pic.md}" data-lg="${pic.md}"></li>`;
     }
     // console.log(html);
     $(".small_list").html(html)
@@ -83,7 +83,7 @@ $(()=>{
       $("a.forward").addClass("disabled");
     }
     $(".mImg").attr("src",`${imgs[0].md}`).removeClass("img");
-    $(".large").css("backgroundImage",`url(${imgs[0].lg})`);
+    $(".large").css("backgroundImage",`url(${imgs[0].md})`);
     //动态加载是否已收藏
     $.get("data/products/getCollection.php",{pid}).then(result=>{
       if(result==1){//判断是否已收藏
